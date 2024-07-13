@@ -2,7 +2,7 @@
 create two instance  and a load balancer aws and see the dns as the output when the code is applied 
 
 # Provider Configuration
-provider "aws": Configures the AWS provider with your AWS credentials and the region where resources will be created.<br>
+<b>provider "aws"</b>: Configures the AWS provider with your AWS credentials and the region where resources will be created.<br>
 access_key: Your AWS access key.<br>
 secret_key: Your AWS secret key.<br>
 region: The AWS region where resources will be deployed (in this case, ap-south-1).
@@ -39,11 +39,11 @@ security_groups: Security groups associated with the load balancer.<br>
 subnets: Subnets in which the load balancer will be deployed.<br>
 
 # Target Group
-resource "aws_lb_target_group" "web_tg": Defines a target group for the load balancer.
-name: Name of the target group.
-port: Port on which the targets are listening (80 for HTTP).
-protocol: Protocol used by the targets (HTTP).
-vpc_id: The VPC ID where the target group will be deployed
+resource "aws_lb_target_group" "web_tg": Defines a target group for the load balancer.<br>
+name: Name of the target group.<br>
+port: Port on which the targets are listening (80 for HTTP).<br>
+protocol: Protocol used by the targets (HTTP).<br>
+vpc_id: The VPC ID where the target group will be deployed<br>
 
 # Load Balancer Listner
 resource "aws_lb_listener" "web_listener": Defines a listener for the load balancer.<br>
