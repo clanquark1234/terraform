@@ -2,10 +2,10 @@
 create two instance  and a load balancer aws and see the dns as the output when the code is applied 
 
 # Provider Configuration
-//provider "aws": Configures the AWS provider with your AWS credentials and the region where resources will be created.
-//access_key: Your AWS access key.
-//secret_key: Your AWS secret key.
-//region: The AWS region where resources will be deployed (in this case, ap-south-1).
+provider "aws": Configures the AWS provider with your AWS credentials and the region where resources will be created.<br>
+access_key: Your AWS access key.<br>
+secret_key: Your AWS secret key.<br>
+region: The AWS region where resources will be deployed (in this case, ap-south-1).
 
 # EC2 Instance
 resource "aws_instance" "instance1": Defines an EC2 instance.
